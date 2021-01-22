@@ -19,13 +19,7 @@ Setup your brand new macbook pro like a pro
 ## Install [HomeBrew](http://brew.sh/), *a tool to install CLI tools without copy/paste*
 
 ```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-## Install [Homebrew Cask](https://caskroom.github.io/), *a tool to install UI tools without [monkey clicking](https://github.com/caskroom/homebrew-cask/blob/master/USAGE.md)*
-
-```bash
-brew tap caskroom/cask
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ## Install tools for devs, *a short must have list*
@@ -35,28 +29,19 @@ brew tap caskroom/cask
 brew install git
 
 #customizable terminal
-brew cask install iterm2
+brew install --cask iterm2
 
-#customizable editor
-brew cask install atom
+#2FA
+brew install --cask authy
 
 #IDE for web dev
-brew cask install webstorm
-
-#to keep in touch with your team
-brew cask install slack
-
-#best web dev browser ^^
-brew cask install google-chrome 
+brew install --cask visual-studio-code
 
 #replace spotlight with alfred
-brew cask install alfred
+brew install --cask alfred
 
 #manage windows with keyboard shortcuts
-brew cask install spectacle
-
-#type emoticons easily everywhere
-brew cask install rocket
+brew install --cask rectangle
 ```
 
 ## Install ZSH & co, *the best shell suite for devs [#mustHave](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet)*
@@ -65,7 +50,7 @@ brew cask install rocket
 brew install zsh zsh-completions
 
 #install oh-my-zsh, a zsh configuration helper
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 #install auto suggestions plugin
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
@@ -145,7 +130,7 @@ git config --global alias.st status
 ### Install [NVM](https://github.com/creationix/nvm), *to manage multiple NodeJS versions*
 
 ```zsh
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+brew install nvm
 ```
  
 ### Restart iTerm2, *or `touch ~/.zshrc`*
