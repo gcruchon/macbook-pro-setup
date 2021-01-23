@@ -209,6 +209,13 @@ Please contribute to improve this and share it to the world if you like it 😉
 ```zsh
 # Watch videos
 brew install --cask vlc
+
+# Java
+brew install java
+
+# Mindmap
+brew install --cask freeplane
+xattr -rc /Applications/Freeplane.app/
 ```
 
 ## VS Code configuration
