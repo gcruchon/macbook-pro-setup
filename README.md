@@ -1,14 +1,10 @@
-# My MacBook Pro setup [https://clakech.github.io/macbook-pro-setup/](https://clakech.github.io/macbook-pro-setup/)
+# My MacBook Pro setup
 
-\#NodeJS #Docker #iTerm2 #Atom #WebStorm #ZSH
+## Inspiration
 
-Setup your brand new macbook pro like a pro
+- [macOS Setup Guide](http://sourabhbajaj.com/mac-setup/index.html)
+- [clakech/macbook-pro-setup](https://github.com/clakech/macbook-pro-setup)
 
-## Mostly Follow [http://sourabhbajaj.com/mac-setup/index.html](http://sourabhbajaj.com/mac-setup/index.html)
-
-## The End 😎
-
-> OK... let's share a quick reminder!
 
 ## Install Xcode, *on macOS, you can't dev without Xcode*
 
@@ -205,12 +201,8 @@ fortune | ponysay
 fortune | cowsay | lolcat
 ```
 
-🎉
-![](ponysay.png?raw=true)
 
 Please contribute to improve this and share it to the world if you like it 😉
-
-/me on twitter [@cyril_lakech](https://twitter.com/cyril_lakech)
 
 ## Install other things
 
@@ -218,3 +210,15 @@ Please contribute to improve this and share it to the world if you like it 😉
 # Watch videos
 brew install --cask vlc
 ```
+
+## VS Code configuration
+
+### Install command line
+
+From [Visual Studio Code on macOS](https://code.visualstudio.com/docs/setup/mac):
+
+- Launch VS Code
+- Open the command palette (`⇧⌘P`) and type 'shell command' to find the Shell Command: Install 'code' command in PATH command.
+- Restart the terminal for the new `$PATH` value to take effect. You'll be able to type 'code .' in any folder to start editing files in that folder.
+
+### Extensions for VS Code
