@@ -222,3 +222,40 @@ From [Visual Studio Code on macOS](https://code.visualstudio.com/docs/setup/mac)
 - Restart the terminal for the new `$PATH` value to take effect. You'll be able to type 'code .' in any folder to start editing files in that folder.
 
 ### Extensions for VS Code
+
+To get the list of extension as "install commands", run:
+```zsh
+code --list-extensions | xargs -L 1 echo code --install-extension
+```
+
+Here's for mine:
+```zsh
+code --install-extension alexkrechik.cucumberautocomplete
+code --install-extension ardenivanov.svelte-intellisense
+code --install-extension bpruitt-goddard.mermaid-markdown-syntax-highlighting
+code --install-extension CoenraadS.bracket-pair-colorizer
+code --install-extension DavidAnson.vscode-markdownlint
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension donjayamanne.githistory
+code --install-extension DotJoshJohnson.xml
+code --install-extension EditorConfig.EditorConfig
+code --install-extension eg2.vscode-npm-script
+code --install-extension esbenp.prettier-vscode
+code --install-extension GitHub.vscode-pull-request-github
+code --install-extension mitchdenny.ecdc
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-dotnettools.csharp
+code --install-extension ms-mssql.mssql
+code --install-extension ms-python.python
+code --install-extension ms-toolsai.jupyter
+code --install-extension ms-vscode.powershell
+code --install-extension RandomFractalsInc.geo-data-viewer
+code --install-extension redhat.vscode-yaml
+code --install-extension slevesque.vscode-hexdump
+code --install-extension SonarSource.sonarlint-vscode
+code --install-extension svelte.svelte-vscode
+code --install-extension syler.sass-indented
+code --install-extension vstirbu.vscode-mermaid-preview
+code --install-extension waderyan.gitblame
+code --install-extension whatwedo.twig
+```
